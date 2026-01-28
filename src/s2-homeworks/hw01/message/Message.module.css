@@ -1,31 +1,87 @@
 .message {
+  min-width: 575px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-bottom: 15px;
 
 }
 
 .imageAndText {
-
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
 }
 
 .imageAndText img {
-
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .text {
-
+  position: relative;
+  background-color: #0066CC;
+  border-radius: 7px;
+  padding: 8px 13px;
+  max-width: 575px;
+  z-index: 0;
 }
 
 .text:after {
+  content: "";
+  position: absolute;
 
+  right: -12px;
+  bottom: 0px;
+
+  width: 20px;
+  height: 12px;
+
+  background: #0066CC;
+  border-bottom-left-radius: 12px;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+.text::before {
+  content: "";
+  position: absolute;
+
+  right:-22px;
+  bottom: 3px;
+
+  width: 22px;
+  height: 12px;
+
+  background: white; /* фон страницы */
+  border-bottom-left-radius: 3px;
+  transform: rotate(41deg);
+  z-index: 2;
 }
 
 .name {
-
+  align-self: flex-end;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
 }
 
 .messageText {
-
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
 }
 
 .time {
+  align-self: flex-end;
+  padding-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: #000000;
 
 }

@@ -1,13 +1,38 @@
 .sendForm {
-
+display: flex;
+  flex-direction: row;
 }
 
 .textarea {
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 976px;
+  width: 100%;
+  min-height: 40px;
+  box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
+  background: #f5f7fb;
 
+  /*нужно менять ,  меняет цвет ввода */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color:#000;
+}
+.textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4); /* светло-серый */
+  opacity: 1; /* чтобы цвет был именно таким, не полупрозрачным */
 }
 
 .button {
-
+  background: #06c;
+  border: #06c;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
 }
 
 .button:hover {
